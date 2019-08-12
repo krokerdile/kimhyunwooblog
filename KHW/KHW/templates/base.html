@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kim Hyun Woo</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="{% url 'intro' %}"><h1>김현우 소개 사이트</h1></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">소개</a>
+                    </li>
+                    <li>
+                        <a href="">글</a>
+                    </li>
+                    <li>
+                        <a href="">사진</a>
+                    </li>
+                    <li>
+                        <a href="">영상</a>
+                    </li>
+                    <li>
+                        <a href="">프로그래밍</a>
+                    </li>
+                    <li>
+                        <a href="">기타정보</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container"> 
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <h1>이메일 : crazykroker@gmail.com</h1>
+        <h1>이메일 : krokerdile@naver.com</h1>
+        <h1>트위치 방송 주소 : https://www.twitch.tv/jacky0831</h1>
+    </footer>
+</body>
+</html>

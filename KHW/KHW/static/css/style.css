@@ -1,0 +1,51 @@
+/* 기본 적인 설정 */
+html{
+    width:100%;
+    height:100%;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/* nav바 작업 */
+header{
+    border-bottom: 1px solid black;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+.logo h1{
+    font-size: 1em;
+    padding: 0 10px 0 0;
+}
+.menu{
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0 10px 0 0;
+    border : 0;
+    float: left;
+}
+/* 메인 내용 작업  */
+
+
+/* footer 작업 */
+footer{
+    border-top: 1px solid black
+}
